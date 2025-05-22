@@ -130,7 +130,7 @@ public abstract class Figure {
     public void unsetCell(){
         Cell currentCell = this.cell;
         this.cell = null;
-        if (currentCell.getFigure() == this){
+        if (this == currentCell.getFigure()){ // 10
             currentCell.unsetFigure();
         }
     }
