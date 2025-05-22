@@ -141,7 +141,7 @@ public abstract class Figure {
      */
     public void setTeam(Team team){
         this.team = team;
-        if (!this.team.getFigureList().contains(this)){
+        if (this.team.getFigureList().contains(this) == false){ // 9
             this.team.addFigure(this);
         }
     }
