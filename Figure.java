@@ -150,7 +150,7 @@ public abstract class Figure {
      * Отвязать команду от фигуры
      */
     public void unsetTeam(){
-        Team currentTeam = this.team;
+        Team currentTeam = this.getTeam(); // 8
         this.team = null;
         if (currentTeam.getFigureList().contains(this)){
             currentTeam.deleteFigure(this);
