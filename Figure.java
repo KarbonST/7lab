@@ -178,19 +178,19 @@ public abstract class Figure {
      * @return список всех доступных позиций для движения
      */
     public List<Cell> getAllCellsFromTrajectories(){
-        List<Cell> allCells = new ArrayList<>();
+        List<Cell> allCellsFromTrajectory = new ArrayList<>(); // 6
 
         // Для всех траекторий движения
         for (Trajectory trajectory: getMovementTrajectories()){
-            allCells.addAll(trajectory.getCells());
+            allCellsFromTrajectory.addAll(trajectory.getCells()); // 6
         }
 
         // Для всех траекторий атаки
         for (Trajectory trajectory: getAttackTrajectories()){
-            allCells.addAll(trajectory.getCells());
+            allCellsFromTrajectory.addAll(trajectory.getCells()); // 6
         }
 
-        return allCells;
+        return allCellsFromTrajectory; // 6
     }
 
     /**
