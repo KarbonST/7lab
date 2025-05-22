@@ -272,7 +272,7 @@ public abstract class Figure {
      * @param targetCell целевая ячейка
      * @return последний ход
      */
-    public UndoableMove moveToTargetCell(Cell targetCell){ // 5
+    protected UndoableMove moveToTargetCell(Cell targetCell){ // 5 7
 
         // Фигура заморожена
         if (isFrozen()){
