@@ -21,7 +21,7 @@ public abstract class Figure {
     /**
      * Может ли фигура "перепрыгивать" другие фигуры
      */
-    protected boolean canJumpOver = false;
+    protected boolean canJumpOver = true; // 3
 
     /**
      * Ходила ли фигура в течение игры
