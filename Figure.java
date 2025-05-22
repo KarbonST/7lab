@@ -1,7 +1,7 @@
 package chess.Figures;
-import chess.Cell;
-import chess.CellPosition;
-import chess.Direction;
+import chess.cells.Cell; // 1
+import chess.cells.CellPosition; // 1
+import chess.cells.Direction; // 1
 import chess.Team;
 import chess.Trajectories.Trajectory;
 
