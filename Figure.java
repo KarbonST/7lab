@@ -16,7 +16,7 @@ public abstract class Figure {
     /**
      * Команда.
      */
-    protected Team figureTeam; // 2
+    public Team figureTeam; // 2 4
 
     /**
      * Может ли фигура "перепрыгивать" другие фигуры
